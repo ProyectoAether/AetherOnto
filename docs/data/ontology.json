@@ -1,0 +1,612 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org", "http://ontologies.khaos.uma.es", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/Aether", "http://w3id.org" ],
+    "title" : {
+      "undefined" : "Aether Ontology"
+    },
+    "iri" : "https://w3id.org/Aether/",
+    "author" : [ "Aether Group" ],
+    "description" : {
+      "undefined" : "A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies."
+    },
+    "labels" : {
+      "undefined" : "Aether Ontology"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://opensource.org/licenses/MIT",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Aether Group",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2022-07-05T09:24:00",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Aether",
+        "type" : "label"
+      }, {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "(c) Aether Group",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "Aether",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Aether Group",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/Aether/",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Aether Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://ontologies.khaos.uma.es/e-lion",
+    "baseIri" : "http://ontologies.khaos.uma.es",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "e-lion",
+      "undefined" : "E-Lion"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/FKQ",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FKQ",
+      "undefined" : "FKQ"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/Electric",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Electric",
+      "undefined" : "Electric"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/BigOWLWorkflow",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BigOWLWorkflow",
+      "undefined" : "Big OWL Workflow"
+    },
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/BigOWLData",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BigOWLData",
+      "undefined" : "Big OWL Data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/BigOWLProblems",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BigOWLProblems",
+      "undefined" : "Big OWL Problems"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/salon",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Sequence ALingment Ontology for pairwise and multiple sequence alignments."
+    },
+    "label" : {
+      "IRI-based" : "salon",
+      "undefined" : "SALON"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/KAPLAN",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KAPLAN",
+      "undefined" : "KAPLAN"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/BigOWLAlgorithms",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BigOWLAlgorithms",
+      "undefined" : "Big OWL Algorithms"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/OntoSecurityGraphDB",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Ontologie that generically encompass and represent the domain in security policies of graph-oriented database."
+    },
+    "label" : {
+      "IRI-based" : "OntoSecurityGraphDB",
+      "undefined" : "Onto Security Graph DB"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/Aether/DomainOntologies",
+    "baseIri" : "https://w3id.org/Aether",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainOntologies",
+      "undefined" : "Domain Ontologies"
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://w3id.org/reseo",
+    "baseIri" : "http://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "reseo",
+      "undefined" : "RESEO"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/knapsack",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "knapsack",
+      "undefined" : "Knapsack"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/COPOntology",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "COPOntology",
+      "undefined" : "COP Ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/Aether/Aether",
+    "baseIri" : "https://w3id.org/Aether",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aether",
+      "undefined" : "Aether"
+    },
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/OntoGraphDB",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Ontology that encompasses and generically represents the domain of the graph-oriented database."
+    },
+    "label" : {
+      "IRI-based" : "OntoGraphDB",
+      "undefined" : "Onto Graph DB"
+    },
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/KIO",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "KIO",
+      "undefined" : "KIO"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/BIGOWL4DQ",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BIGOWL4DQ",
+      "undefined" : "BIGOWL4DQ"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/smartFood",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "smartFood",
+      "undefined" : "Smart Food"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/Aether/include_bigowl_algorithm_cop",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "include_bigowl_algorithm_cop",
+      "undefined" : "include"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_aether_bigowl_algorithm",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "include_aether_bigowl_algorithm",
+      "undefined" : "include"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_bigowl_data_COP",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "include_bigowl_data_COP",
+      "undefined" : "include"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_aether_domain_ontology",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "include_aether_domain_ontology",
+      "undefined" : "include"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_bigowl_problems_smart_food",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "include_bigowl_problems_smart_food",
+      "undefined" : "include"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_domain_ontologies_salon",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "include_domain_ontologies_salon",
+      "undefined" : "include"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_bigowl_data_bigowl4dq",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "include_bigowl_data_bigowl4dq",
+      "undefined" : "include"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_aether_bigowl_data",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "include_aether_bigowl_data",
+      "undefined" : "include"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_bigowl_data_OntoGraphDB",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "include_bigowl_data_OntoGraphDB",
+      "undefined" : "include"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_domain_ontologies_e-lion",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "include_domain_ontologies_e-lion",
+      "undefined" : "include"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/Aether/Include_bigowl_problems_COP",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "Include_bigowl_problems_COP",
+      "undefined" : "include"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_aether_bigowl_workfow",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "include_aether_bigowl_workfow",
+      "undefined" : "include"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_OntoGraphDB_OntoSecurityGraphDB",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "include_OntoGraphDB_OntoSecurityGraphDB",
+      "undefined" : "include"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_domain_ontologies_reseo",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "include_domain_ontologies_reseo",
+      "undefined" : "include"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_bigowl_algorithms_FQK",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "include_bigowl_algorithms_FQK",
+      "undefined" : "include"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_bigowl_problems_knapsack",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "include_bigowl_problems_knapsack",
+      "undefined" : "include"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_aether_bigowl_problem",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "include_aether_bigowl_problem",
+      "undefined" : "include"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_bigowl_algorithms_kaplan",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "include_bigowl_algorithms_kaplan",
+      "undefined" : "include"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_domain_ontologies_electric",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "include_domain_ontologies_electric",
+      "undefined" : "include"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_aether_kio",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "include_aether_kio",
+      "undefined" : "include"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  } ]
+}

@@ -1,0 +1,479 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontologies.aether.es/"
+     xml:base="http://ontologies.aether.es/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/Aether/">
+        <owl:versionIRI rdf:resource="https://w3id.org/Aether/"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-05T09:24:00</terms:created>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aether Group</terms:creator>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies.</terms:description>
+        <terms:license rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://opensource.org/licenses/MIT</terms:license>
+        <terms:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aether Group</terms:publisher>
+        <terms:rights rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">(c) Aether Group</terms:rights>
+        <terms:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aether</terms:rights>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aether Ontology</terms:title>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aether</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/Aether/</vann:preferredNamespaceUri>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aether Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- https://schema.org/url -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/url"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/Aether/Include_bigowl_problems_COP -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/Include_bigowl_problems_COP">
+        <rdfs:domain rdf:resource="https://w3id.org/BigOWLProblems"/>
+        <rdfs:range rdf:resource="https://w3id.org/COPOntology"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_OntoGraphDB_OntoSecurityGraphDB -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_OntoGraphDB_OntoSecurityGraphDB">
+        <rdfs:domain rdf:resource="https://w3id.org/OntoGraphDB"/>
+        <rdfs:range rdf:resource="https://w3id.org/OntoSecurityGraphDB"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_aether_bigowl_algorithm -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_aether_bigowl_algorithm">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/Aether"/>
+        <rdfs:range rdf:resource="https://w3id.org/BigOWLAlgorithms"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_aether_bigowl_data -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_aether_bigowl_data">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/Aether"/>
+        <rdfs:range rdf:resource="https://w3id.org/BigOWLData"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_aether_bigowl_problem -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_aether_bigowl_problem">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/Aether"/>
+        <rdfs:range rdf:resource="https://w3id.org/BigOWLProblems"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_aether_bigowl_workfow -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_aether_bigowl_workfow">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/Aether"/>
+        <rdfs:range rdf:resource="https://w3id.org/BigOWLWorkflow"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_aether_domain_ontology -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_aether_domain_ontology">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/Aether"/>
+        <rdfs:range rdf:resource="https://w3id.org/Aether/DomainOntologies"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_aether_kio -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_aether_kio">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/Aether"/>
+        <rdfs:range rdf:resource="https://w3id.org/KIO"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_bigowl_algorithm_cop -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_bigowl_algorithm_cop">
+        <rdfs:domain rdf:resource="https://w3id.org/BigOWLAlgorithms"/>
+        <rdfs:range rdf:resource="https://w3id.org/COPOntology"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_bigowl_algorithms_FQK -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_bigowl_algorithms_FQK">
+        <rdfs:domain rdf:resource="https://w3id.org/BigOWLAlgorithms"/>
+        <rdfs:range rdf:resource="https://w3id.org/FKQ"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_bigowl_algorithms_kaplan -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_bigowl_algorithms_kaplan">
+        <rdfs:domain rdf:resource="https://w3id.org/BigOWLAlgorithms"/>
+        <rdfs:range rdf:resource="https://w3id.org/KAPLAN"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_bigowl_data_COP -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_bigowl_data_COP">
+        <rdfs:domain rdf:resource="https://w3id.org/BigOWLData"/>
+        <rdfs:range rdf:resource="https://w3id.org/COPOntology"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_bigowl_data_OntoGraphDB -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_bigowl_data_OntoGraphDB">
+        <rdfs:domain rdf:resource="https://w3id.org/BigOWLData"/>
+        <rdfs:range rdf:resource="https://w3id.org/OntoGraphDB"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_bigowl_data_bigowl4dq -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_bigowl_data_bigowl4dq">
+        <rdfs:domain rdf:resource="https://w3id.org/BigOWLData"/>
+        <rdfs:range rdf:resource="https://w3id.org/BIGOWL4DQ"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_bigowl_problems_knapsack -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_bigowl_problems_knapsack">
+        <rdfs:domain rdf:resource="https://w3id.org/BigOWLProblems"/>
+        <rdfs:range rdf:resource="https://w3id.org/knapsack"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_bigowl_problems_smart_food -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_bigowl_problems_smart_food">
+        <rdfs:domain rdf:resource="https://w3id.org/BigOWLProblems"/>
+        <rdfs:range rdf:resource="https://w3id.org/smartFood"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_domain_ontologies_e-lion -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_domain_ontologies_e-lion">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/DomainOntologies"/>
+        <rdfs:range rdf:resource="http://ontologies.khaos.uma.es/e-lion"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_domain_ontologies_electric -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_domain_ontologies_electric">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/DomainOntologies"/>
+        <rdfs:range rdf:resource="https://w3id.org/Electric"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_domain_ontologies_reseo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_domain_ontologies_reseo">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/DomainOntologies"/>
+        <rdfs:range rdf:resource="http://w3id.org/reseo"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/Aether/include_domain_ontologies_salon -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_domain_ontologies_salon">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/DomainOntologies"/>
+        <rdfs:range rdf:resource="https://w3id.org/salon"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies.khaos.uma.es/e-lion -->
+
+    <owl:Class rdf:about="http://ontologies.khaos.uma.es/e-lion">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E-Lion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/reseo -->
+
+    <owl:Class rdf:about="http://w3id.org/reseo">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESEO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/BIGOWL4DQ -->
+
+    <owl:Class rdf:about="https://w3id.org/BIGOWL4DQ">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BIGOWL4DQ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/BigOWLAlgorithms -->
+
+    <owl:Class rdf:about="https://w3id.org/BigOWLAlgorithms">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big OWL Algorithms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/BigOWLData -->
+
+    <owl:Class rdf:about="https://w3id.org/BigOWLData">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big OWL Data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/BigOWLProblems -->
+
+    <owl:Class rdf:about="https://w3id.org/BigOWLProblems">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big OWL Problems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/BigOWLWorkflow -->
+
+    <owl:Class rdf:about="https://w3id.org/BigOWLWorkflow">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Big OWL Workflow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/COPOntology -->
+
+    <owl:Class rdf:about="https://w3id.org/COPOntology">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COP Ontology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/Electric -->
+
+    <owl:Class rdf:about="https://w3id.org/Electric">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/FKQ -->
+
+    <owl:Class rdf:about="https://w3id.org/FKQ">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FKQ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/KAPLAN -->
+
+    <owl:Class rdf:about="https://w3id.org/KAPLAN">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KAPLAN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/KIO -->
+
+    <owl:Class rdf:about="https://w3id.org/KIO">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KIO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OntoGraphDB -->
+
+    <owl:Class rdf:about="https://w3id.org/OntoGraphDB">
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology that encompasses and generically represents the domain of the graph-oriented database.</terms:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onto Graph DB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/OntoSecurityGraphDB -->
+
+    <owl:Class rdf:about="https://w3id.org/OntoSecurityGraphDB">
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontologie that generically encompass and represent the domain in security policies of graph-oriented database.</terms:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onto Security Graph DB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/knapsack -->
+
+    <owl:Class rdf:about="https://w3id.org/knapsack">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knapsack</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/salon -->
+
+    <owl:Class rdf:about="https://w3id.org/salon">
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sequence ALingment Ontology for pairwise and multiple sequence alignments.</terms:description>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SALON</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/smartFood -->
+
+    <owl:Class rdf:about="https://w3id.org/smartFood">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smart Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/Aether/Aether -->
+
+    <owl:Class rdf:about="https://w3id.org/Aether/Aether">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aether</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/Aether/DomainOntologies -->
+
+    <owl:Class rdf:about="https://w3id.org/Aether/DomainOntologies">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain Ontologies</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
