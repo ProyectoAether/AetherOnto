@@ -215,6 +215,17 @@
     
 
 
+    <!-- https://w3id.org/Aether/include_domain_ontologies_obo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_domain_ontologies_obo">
+        <rdfs:domain rdf:resource="https://w3id.org/Aether/DomainOntologies"/>
+        <rdfs:range rdf:resource="http://ontologies.khaos.uma.es/obo"/>
+        <rdfs:comment xml:lang="en">Domain Ontologies incluide Open Banking Ontology</rdfs:comment>
+        <rdfs:label>include</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/Aether/include_domain_ontologies_reseo -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/Aether/include_domain_ontologies_reseo">

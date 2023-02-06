@@ -266,6 +266,22 @@
     "@id" : "http://ontologies.khaos.uma.es/e-lion"
   } ]
 }, {
+  "@id" : "https://w3id.org/Aether/include_domain_ontologies_obo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Domain Ontologies incluide Open Banking Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/Aether/DomainOntologies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "include"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://ontologies.khaos.uma.es/obo"
+  } ]
+}, {
   "@id" : "https://w3id.org/Aether/include_domain_ontologies_reseo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {

@@ -146,6 +146,14 @@
                                   rdfs:label "include" .
 
 
+###  https://w3id.org/Aether/include_domain_ontologies_obo
+:include_domain_ontologies_obo rdf:type owl:ObjectProperty ;
+                               rdfs:domain :DomainOntologies ;
+                               rdfs:range <http://ontologies.khaos.uma.es/obo> ;
+                               rdfs:comment "Domain Ontologies incluide Open Banking Ontology"@en ;
+                               rdfs:label "include" .
+
+
 ###  https://w3id.org/Aether/include_domain_ontologies_reseo
 :include_domain_ontologies_reseo rdf:type owl:ObjectProperty ;
                                  rdfs:domain :DomainOntologies ;

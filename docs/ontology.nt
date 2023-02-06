@@ -127,6 +127,13 @@
 <https://w3id.org/Aether/include_domain_ontologies_e-lion> <http://www.w3.org/2000/01/rdf-schema#comment> "Domain Ontologies include e-LION"@en .
 <https://w3id.org/Aether/include_domain_ontologies_e-lion> <http://www.w3.org/2000/01/rdf-schema#label> "include" .
 # 
+# https://w3id.org/Aether/include_domain_ontologies_obo
+<https://w3id.org/Aether/include_domain_ontologies_obo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/Aether/include_domain_ontologies_obo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/Aether/DomainOntologies> .
+<https://w3id.org/Aether/include_domain_ontologies_obo> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.khaos.uma.es/obo> .
+<https://w3id.org/Aether/include_domain_ontologies_obo> <http://www.w3.org/2000/01/rdf-schema#comment> "Domain Ontologies incluide Open Banking Ontology"@en .
+<https://w3id.org/Aether/include_domain_ontologies_obo> <http://www.w3.org/2000/01/rdf-schema#label> "include" .
+# 
 # https://w3id.org/Aether/include_domain_ontologies_reseo
 <https://w3id.org/Aether/include_domain_ontologies_reseo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/Aether/include_domain_ontologies_reseo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/Aether/DomainOntologies> .

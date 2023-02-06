@@ -94,34 +94,34 @@
     "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "20",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "21",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
     "type" : "owl:Class"
   }, {
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -175,7 +175,7 @@
       "en" : "This ontology is used tto guide the correct orchestration of a workflow, including elements like tasks, components, parameters, etc. This ontology imports BIGOWLData and BIGOWLAlgorithms to define all the pieces in a workflow."
     },
     "attributes" : [ "external" ],
-    "id" : "7"
+    "id" : "8"
   }, {
     "iri" : "https://w3id.org/salon",
     "baseIri" : "https://w3id.org",
@@ -188,7 +188,7 @@
       "undefined" : "Sequence ALingment Ontology for pairwise and multiple sequence alignments."
     },
     "attributes" : [ "external" ],
-    "id" : "9"
+    "id" : "12"
   }, {
     "iri" : "https://w3id.org/BIGOWLData",
     "baseIri" : "https://w3id.org",
@@ -201,7 +201,7 @@
       "en" : "This ontology contains all the classes and properties related to data. Data is devoted to annotating all the data flowing throughout the analytic workflow. It is declared as EquivalentTo IO-Class of DMOP. This aligning enables datatypes defined by third parties’ ontologies to be contextualised in the analysis. BIGOWLData contains the main data properties defined for this class, namely: path, to annotate the origin of data; and hasDataType, which establishes the relationship with class DataType. This last is used to define the data type, i.e. PrimitiveType (Double, Integer, Boolean, etc.) or StructuredType (Graph, Tree, Matrix, Vector, Tuple, etc.)."
     },
     "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "10"
   }, {
     "iri" : "https://w3id.org/BIGOWLProblems",
     "baseIri" : "https://w3id.org",
@@ -214,7 +214,7 @@
       "en" : "This ontology is used to represent the problem class and its properties. Problem is oriented to the specific problem domain (Smart Cities, Biology, etc.)."
     },
     "attributes" : [ "external" ],
-    "id" : "20"
+    "id" : "21"
   }, {
     "iri" : "https://w3id.org/reseo",
     "baseIri" : "https://w3id.org",
@@ -227,7 +227,7 @@
       "en" : "This ontology proposing a semantic model for the consolidation, integration, reasoning and linking of data (and meta-data), in the context of satellital remote sensing products for EO. With this objective, an OWL ontology has been developed and an RDF repository has been generated to allow advanced SPARQL querying. Although the proposal has been designed to consider remote sensing data products in general, the current study is mainly focused on the Sentinel 2 satellite mission from the Copernicus Programme of the European Space Agency (ESA). Four different use cases are showcased to check potentials of the proposed semantic model in terms of ontology integration, federated querying, data analysis and reasoning."
     },
     "attributes" : [ "external" ],
-    "id" : "21"
+    "id" : "22"
   }, {
     "iri" : "https://w3id.org/OntoSecurityGraphDB",
     "baseIri" : "https://w3id.org",
@@ -240,7 +240,7 @@
       "undefined" : "Ontologie that generically encompass and represent the domain in security policies of graph-oriented database."
     },
     "attributes" : [ "external" ],
-    "id" : "19"
+    "id" : "20"
   }, {
     "iri" : "https://w3id.org/Aether/DomainOntologies",
     "baseIri" : "https://w3id.org/Aether",
@@ -254,19 +254,6 @@
     },
     "id" : "6"
   }, {
-    "iri" : "https://w3id.org/OntoGraphDB",
-    "baseIri" : "https://w3id.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "OntoGraphDB",
-      "undefined" : "Onto Graph DB"
-    },
-    "comment" : {
-      "undefined" : "Ontologie that generically encompass and represent the domain in graph-oriented database."
-    },
-    "attributes" : [ "external" ],
-    "id" : "16"
-  }, {
     "iri" : "https://w3id.org/Aether/Aether",
     "baseIri" : "https://w3id.org/Aether",
     "instances" : 0,
@@ -279,6 +266,19 @@
     },
     "id" : "4"
   }, {
+    "iri" : "https://w3id.org/OntoGraphDB",
+    "baseIri" : "https://w3id.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OntoGraphDB",
+      "undefined" : "Onto Graph DB"
+    },
+    "comment" : {
+      "undefined" : "Ontologie that generically encompass and represent the domain in graph-oriented database."
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
     "iri" : "https://w3id.org/BIGOWL4DQ",
     "baseIri" : "https://w3id.org",
     "instances" : 0,
@@ -290,7 +290,7 @@
       "en" : "BIGOW4DQL, has been designed and implemented for a comprehensive solution that integrates and appropriately relates the measurement, assessment, and creation of a suggestion for using data through business rules."
     },
     "attributes" : [ "external" ],
-    "id" : "13"
+    "id" : "14"
   } ],
   "property" : [ {
     "id" : "3",
@@ -299,31 +299,34 @@
     "id" : "5",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "8",
+    "id" : "7",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "10",
+    "id" : "9",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "12",
+    "id" : "11",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "14",
+    "id" : "13",
     "type" : "owl:objectProperty"
   }, {
     "id" : "15",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "17",
+    "id" : "16",
     "type" : "owl:objectProperty"
   }, {
     "id" : "18",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "22",
+    "id" : "19",
     "type" : "owl:objectProperty"
   }, {
     "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
@@ -355,23 +358,23 @@
     "attributes" : [ "object" ],
     "id" : "5"
   }, {
-    "iri" : "https://w3id.org/Aether/include_domain_ontologies_salon",
+    "iri" : "https://w3id.org/Aether/include_domain_ontologies_obo",
     "baseIri" : "https://w3id.org/Aether",
-    "range" : "9",
+    "range" : "2",
     "label" : {
-      "IRI-based" : "include_domain_ontologies_salon",
+      "IRI-based" : "include_domain_ontologies_obo",
       "undefined" : "include"
     },
     "domain" : "6",
     "comment" : {
-      "en" : "Domain Ontologies include SALON"
+      "en" : "Domain Ontologies incluide Open Banking Ontology"
     },
     "attributes" : [ "object" ],
-    "id" : "8"
+    "id" : "7"
   }, {
     "iri" : "https://w3id.org/Aether/include_aether_bigowl_data",
     "baseIri" : "https://w3id.org/Aether",
-    "range" : "11",
+    "range" : "10",
     "label" : {
       "IRI-based" : "include_aether_bigowl_data",
       "undefined" : "include"
@@ -381,21 +384,35 @@
       "en" : "Aether include Big OWL Data."
     },
     "attributes" : [ "object" ],
-    "id" : "10"
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_domain_ontologies_salon",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "include_domain_ontologies_salon",
+      "undefined" : "include"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Domain Ontologies include SALON"
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
   }, {
     "iri" : "https://w3id.org/Aether/include_bigowl_data_bigowl4dq",
     "baseIri" : "https://w3id.org/Aether",
-    "range" : "13",
+    "range" : "14",
     "label" : {
       "IRI-based" : "include_bigowl_data_bigowl4dq",
       "undefined" : "include"
     },
-    "domain" : "11",
+    "domain" : "10",
     "comment" : {
       "en" : "Big OWL 4DQ include Big OEL Data"
     },
     "attributes" : [ "object" ],
-    "id" : "12"
+    "id" : "13"
   }, {
     "iri" : "https://w3id.org/Aether/include_domain_ontologies_e-lion",
     "baseIri" : "https://w3id.org/Aether",
@@ -409,25 +426,25 @@
       "en" : "Domain Ontologies include e-LION"
     },
     "attributes" : [ "object" ],
-    "id" : "14"
+    "id" : "15"
   }, {
     "iri" : "https://w3id.org/Aether/include_bigowl_data_OntoGraphDB",
     "baseIri" : "https://w3id.org/Aether",
-    "range" : "16",
+    "range" : "17",
     "label" : {
       "IRI-based" : "include_bigowl_data_OntoGraphDB",
       "undefined" : "include"
     },
-    "domain" : "11",
+    "domain" : "10",
     "comment" : {
       "en" : "Onto Graph DB include Big OWL Data"
     },
     "attributes" : [ "object" ],
-    "id" : "15"
+    "id" : "16"
   }, {
     "iri" : "https://w3id.org/Aether/include_aether_bigowl_workfow",
     "baseIri" : "https://w3id.org/Aether",
-    "range" : "7",
+    "range" : "8",
     "label" : {
       "IRI-based" : "include_aether_bigowl_workfow",
       "undefined" : "include"
@@ -437,25 +454,25 @@
       "en" : "Aether Include Big OWL Workflows."
     },
     "attributes" : [ "object" ],
-    "id" : "17"
+    "id" : "18"
   }, {
     "iri" : "https://w3id.org/Aether/include_OntoGraphDB_OntoSecurityGraphDB",
     "baseIri" : "https://w3id.org/Aether",
-    "range" : "19",
+    "range" : "20",
     "label" : {
       "IRI-based" : "include_OntoGraphDB_OntoSecurityGraphDB",
       "undefined" : "include"
     },
-    "domain" : "16",
+    "domain" : "17",
     "comment" : {
       "en" : "Onto Security Graph DB. include Onto Graph DB"
     },
     "attributes" : [ "object" ],
-    "id" : "18"
+    "id" : "19"
   }, {
     "iri" : "https://w3id.org/Aether/include_domain_ontologies_reseo",
     "baseIri" : "https://w3id.org/Aether",
-    "range" : "21",
+    "range" : "22",
     "label" : {
       "IRI-based" : "include_domain_ontologies_reseo",
       "undefined" : "include"
@@ -465,11 +482,11 @@
       "en" : "Domain Ontologies include RESEO"
     },
     "attributes" : [ "object" ],
-    "id" : "22"
+    "id" : "23"
   }, {
     "iri" : "https://w3id.org/Aether/include_aether_bigowl_problem",
     "baseIri" : "https://w3id.org/Aether",
-    "range" : "20",
+    "range" : "21",
     "label" : {
       "IRI-based" : "include_aether_bigowl_problem",
       "undefined" : "include"
@@ -479,6 +496,6 @@
       "en" : "Aether include Big OWL Problems."
     },
     "attributes" : [ "object" ],
-    "id" : "23"
+    "id" : "24"
   } ]
 }
