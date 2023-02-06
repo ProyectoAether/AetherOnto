@@ -41,6 +41,9 @@
   "@id" : "http://purl.org/dc/terms/rights",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -94,6 +97,10 @@
     "@value" : "(c) Aether Group"
   }, {
     "@value" : "Aether"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Khaos Research"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Aether Ontology"

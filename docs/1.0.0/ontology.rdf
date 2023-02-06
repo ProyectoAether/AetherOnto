@@ -21,6 +21,7 @@
         <terms:publisher>Aether Group</terms:publisher>
         <terms:rights rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">(c) Aether Group</terms:rights>
         <terms:rights>Aether</terms:rights>
+        <terms:source rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Khaos Research</terms:source>
         <terms:title>Aether Ontology</terms:title>
         <bibo:status xml:lang="en">Draft</bibo:status>
         <vann:preferredNamespacePrefix>Aether</vann:preferredNamespacePrefix>
@@ -91,6 +92,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
     
 
 

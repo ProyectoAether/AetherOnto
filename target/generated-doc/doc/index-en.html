@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>Aether Ontology</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/Aether/","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/Aether/","name":"Aether Ontology", "headline":"A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies.", "datePublished":"2022-07-05T09:24:00", "version":"1.0.0", "license":"https://opensource.org/licenses/MIT", "author":[{"@type":"Person","name":"Aether Group"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>Aether Ontology</h1>
+<h2>Release 2022-07-05T09:24:00</h2>
+
+
+<dl>
+<dt>This version:</dt>
+<dd><a href="https://w3id.org/Aether/1.0.0">https://w3id.org/Aether/1.0.0</a></dd>
+<dt>Revision:</dt>
+<dd>1.0.0</dd>
+<dt>Issued on: </dt>
+<dd>2023-01-06T12:00:00</dd>
+<dt>Authors:</dt>
+<dd>Aether Group</dd>
+
+<dt>Publisher:</dt>
+<dd>Aether Group</dd>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-https://opensource.org/licenses/MIT-blue.svg" alt="https://opensource.org/licenses/MIT" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Cite this ontology as: Aether Group, Aether Ontology 1.0.0.</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies.</span>
+</div>
+<div id="toc"></div>  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Aether Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#Aether" title="https://w3id.org/Aether/Aether">Aether</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/BIGOWLAlgorithms" title="https://w3id.org/BIGOWLAlgorithms">Big OWL Algorithms</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/BIGOWLData" title="https://w3id.org/BIGOWLData">Big OWL Data</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/BIGOWLProblems" title="https://w3id.org/BIGOWLProblems">Big OWL Problems</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/BIGOWLWorkflows" title="https://w3id.org/BIGOWLWorkflows">Big OWL Workflows</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/BIGOWL4DQ" title="https://w3id.org/BIGOWL4DQ">BIGOWL4DQ</a>
+   </li>
+   <li>
+      <a href="#DomainOntologies" title="https://w3id.org/Aether/DomainOntologies">Domain Ontologies</a>
+   </li>
+   <li>
+      <a href="#http://ontologies.khaos.uma.es/e-lion" title="http://ontologies.khaos.uma.es/e-lion">e-LION</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/OntoGraphDB" title="https://w3id.org/OntoGraphDB">Onto Graph DB</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/OntoSecurityGraphDB" title="https://w3id.org/OntoSecurityGraphDB">Onto Security Graph DB</a>
+   </li>
+   <li>
+      <a href="#http://ontologies.khaos.uma.es/obo" title="http://ontologies.khaos.uma.es/obo">Open Banking Ontology</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/reseo" title="https://w3id.org/reseo">RESEO</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/salon" title="https://w3id.org/salon">SALON</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
+   <li>
+      <a href="#include_OntoGraphDB_OntoSecurityGraphDB"
+         title="https://w3id.org/Aether/include_OntoGraphDB_OntoSecurityGraphDB">include</a>
+   </li>
+   <li>
+      <a href="#include_aether_bigowl_algorithm"
+         title="https://w3id.org/Aether/include_aether_bigowl_algorithm">include</a>
+   </li>
+   <li>
+      <a href="#include_aether_bigowl_data"
+         title="https://w3id.org/Aether/include_aether_bigowl_data">include</a>
+   </li>
+   <li>
+      <a href="#include_aether_bigowl_problem"
+         title="https://w3id.org/Aether/include_aether_bigowl_problem">include</a>
+   </li>
+   <li>
+      <a href="#include_aether_bigowl_workfow"
+         title="https://w3id.org/Aether/include_aether_bigowl_workfow">include</a>
+   </li>
+   <li>
+      <a href="#include_aether_domain_ontology"
+         title="https://w3id.org/Aether/include_aether_domain_ontology">include</a>
+   </li>
+   <li>
+      <a href="#include_bigowl_data_OntoGraphDB"
+         title="https://w3id.org/Aether/include_bigowl_data_OntoGraphDB">include</a>
+   </li>
+   <li>
+      <a href="#include_bigowl_data_bigowl4dq"
+         title="https://w3id.org/Aether/include_bigowl_data_bigowl4dq">include</a>
+   </li>
+   <li>
+      <a href="#include_domain_ontologies_e-lion"
+         title="https://w3id.org/Aether/include_domain_ontologies_e-lion">include</a>
+   </li>
+   <li>
+      <a href="#include_domain_ontologies_obo"
+         title="https://w3id.org/Aether/include_domain_ontologies_obo">include</a>
+   </li>
+   <li>
+      <a href="#include_domain_ontologies_reseo"
+         title="https://w3id.org/Aether/include_domain_ontologies_reseo">include</a>
+   </li>
+   <li>
+      <a href="#include_domain_ontologies_salon"
+         title="https://w3id.org/Aether/include_domain_ontologies_salon">include</a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Aether Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Aether Ontology.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Aether" title="https://w3id.org/Aether/Aether">Aether</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/BIGOWLAlgorithms" title="https://w3id.org/BIGOWLAlgorithms">Big OWL Algorithms</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/BIGOWLData" title="https://w3id.org/BIGOWLData">Big OWL Data</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/BIGOWLProblems" title="https://w3id.org/BIGOWLProblems">Big OWL Problems</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/BIGOWLWorkflows" title="https://w3id.org/BIGOWLWorkflows">Big OWL Workflows</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/BIGOWL4DQ" title="https://w3id.org/BIGOWL4DQ">BIGOWL4DQ</a>
+      </li>
+      <li>
+         <a href="#DomainOntologies" title="https://w3id.org/Aether/DomainOntologies">Domain Ontologies</a>
+      </li>
+      <li>
+         <a href="#http://ontologies.khaos.uma.es/e-lion" title="http://ontologies.khaos.uma.es/e-lion">e-LION</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/OntoGraphDB" title="https://w3id.org/OntoGraphDB">Onto Graph DB</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/OntoSecurityGraphDB" title="https://w3id.org/OntoSecurityGraphDB">Onto Security Graph DB</a>
+      </li>
+      <li>
+         <a href="#http://ontologies.khaos.uma.es/obo" title="http://ontologies.khaos.uma.es/obo">Open Banking Ontology</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/reseo" title="https://w3id.org/reseo">RESEO</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/salon" title="https://w3id.org/salon">SALON</a>
+      </li>
+   </ul>
+   <div class="entity" id="Aether">
+      <h3>Aether<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/Aether</p>
+      <div class="comment">
+         <span class="markdown">A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#include_aether_bigowl_algorithm"
+               title="https://w3id.org/Aether/include_aether_bigowl_algorithm">include</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#include_aether_bigowl_data"
+               title="https://w3id.org/Aether/include_aether_bigowl_data">include</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#include_aether_bigowl_problem"
+               title="https://w3id.org/Aether/include_aether_bigowl_problem">include</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#include_aether_bigowl_workfow"
+               title="https://w3id.org/Aether/include_aether_bigowl_workfow">include</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#include_aether_domain_ontology"
+               title="https://w3id.org/Aether/include_aether_domain_ontology">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/BIGOWLAlgorithms">
+      <h3>Big OWL Algorithms<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/BIGOWLAlgorithms</p>
+      <div class="comment">
+         <span class="markdown">This ontology covers all possible kinds. It has two main subclasses: DataMiningAlgorithm and OptimizationAlgorithm, which are used to distinguish between these two families of algorithms. The former is included in the form of equivalence with the class DM-Algorithm, which is linked from DMOP.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_aether_bigowl_algorithm"
+               title="https://w3id.org/Aether/include_aether_bigowl_algorithm">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/BIGOWLData">
+      <h3>Big OWL Data<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/BIGOWLData</p>
+      <div class="comment">
+         <span class="markdown">This ontology contains all the classes and properties related to data. Data is devoted to annotating all the data flowing throughout the analytic workflow. It is declared as EquivalentTo IO-Class of DMOP. This aligning enables datatypes defined by third parties’ ontologies to be contextualised in the analysis. BIGOWLData contains the main data properties defined for this class, namely: path, to annotate the origin of data; and hasDataType, which establishes the relationship with class DataType. This last is used to define the data type, i.e. PrimitiveType (Double, Integer, Boolean, etc.) or StructuredType (Graph, Tree, Matrix, Vector, Tuple, etc.).</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#include_bigowl_data_OntoGraphDB"
+               title="https://w3id.org/Aether/include_bigowl_data_OntoGraphDB">include</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#include_bigowl_data_bigowl4dq"
+               title="https://w3id.org/Aether/include_bigowl_data_bigowl4dq">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_aether_bigowl_data"
+               title="https://w3id.org/Aether/include_aether_bigowl_data">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/BIGOWLProblems">
+      <h3>Big OWL Problems<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/BIGOWLProblems</p>
+      <div class="comment">
+         <span class="markdown">This ontology is used to represent the problem class and its properties. Problem is oriented to the specific problem domain (Smart Cities, Biology, etc.).</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_aether_bigowl_problem"
+               title="https://w3id.org/Aether/include_aether_bigowl_problem">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/BIGOWLWorkflows">
+      <h3>Big OWL Workflows<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/BIGOWLWorkflows</p>
+      <div class="comment">
+         <span class="markdown">This ontology is used tto guide the correct orchestration of a workflow, including elements like tasks, components, parameters, etc. This ontology imports BIGOWLData and BIGOWLAlgorithms to define all the pieces in a workflow.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_aether_bigowl_workfow"
+               title="https://w3id.org/Aether/include_aether_bigowl_workfow">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/BIGOWL4DQ">
+      <h3>BIGOWL4DQ<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/BIGOWL4DQ</p>
+      <div class="comment">
+         <span class="markdown">BIGOW4DQL, has been designed and implemented for a comprehensive solution that integrates and appropriately relates the measurement, assessment, and creation of a suggestion for using data through business rules.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_bigowl_data_bigowl4dq"
+               title="https://w3id.org/Aether/include_bigowl_data_bigowl4dq">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DomainOntologies">
+      <h3>Domain Ontologies<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/DomainOntologies</p>
+      <div class="comment">
+         <span class="markdown">This class represents problem-specific domain ontologies.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#include_domain_ontologies_e-lion"
+               title="https://w3id.org/Aether/include_domain_ontologies_e-lion">include</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#include_domain_ontologies_obo"
+               title="https://w3id.org/Aether/include_domain_ontologies_obo">include</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#include_domain_ontologies_reseo"
+               title="https://w3id.org/Aether/include_domain_ontologies_reseo">include</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#include_domain_ontologies_salon"
+               title="https://w3id.org/Aether/include_domain_ontologies_salon">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_aether_domain_ontology"
+               title="https://w3id.org/Aether/include_aether_domain_ontology">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ontologies.khaos.uma.es/e-lion">
+      <h3>e-LION<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ontologies.khaos.uma.es/e-lion</p>
+      <div class="comment">
+         <span class="markdown">e-LION (e-Learning Integration ONtology) semantic model is proposed to operate as a data consolidation approach of different e-learning knowledge-bases, hence leading to enrich on-top analysis.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_domain_ontologies_e-lion"
+               title="https://w3id.org/Aether/include_domain_ontologies_e-lion">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/OntoGraphDB">
+      <h3>Onto Graph DB<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/OntoGraphDB</p>
+      <div class="comment">
+         <span class="markdown">Ontologie that generically encompass and represent the domain in graph-oriented database.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#include_OntoGraphDB_OntoSecurityGraphDB"
+               title="https://w3id.org/Aether/include_OntoGraphDB_OntoSecurityGraphDB">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_bigowl_data_OntoGraphDB"
+               title="https://w3id.org/Aether/include_bigowl_data_OntoGraphDB">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/OntoSecurityGraphDB">
+      <h3>Onto Security Graph DB<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/OntoSecurityGraphDB</p>
+      <div class="comment">
+         <span class="markdown">Ontologie that generically encompass and represent the domain in security policies of graph-oriented database.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_OntoGraphDB_OntoSecurityGraphDB"
+               title="https://w3id.org/Aether/include_OntoGraphDB_OntoSecurityGraphDB">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://ontologies.khaos.uma.es/obo">
+      <h3>Open Banking Ontology<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://ontologies.khaos.uma.es/obo</p>
+      <div class="comment">
+         <span class="markdown">This ontology domain represents the different actors and information generated in open banking services. More specifically, bank statements and invoice management systems are contextualised to allow data reconciliation tasks.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_domain_ontologies_obo"
+               title="https://w3id.org/Aether/include_domain_ontologies_obo">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/reseo">
+      <h3>RESEO<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/reseo</p>
+      <div class="comment">
+         <span class="markdown">This ontology proposing a semantic model for the consolidation, integration, reasoning and linking of data (and meta-data), in the context of satellital remote sensing products for EO. With this objective, an OWL ontology has been developed and an RDF repository has been generated to allow advanced SPARQL querying. Although the proposal has been designed to consider remote sensing data products in general, the current study is mainly focused on the Sentinel 2 satellite mission from the Copernicus Programme of the European Space Agency (ESA). Four different use cases are showcased to check potentials of the proposed semantic model in terms of ontology integration, federated querying, data analysis and reasoning.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_domain_ontologies_reseo"
+               title="https://w3id.org/Aether/include_domain_ontologies_reseo">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/salon">
+      <h3>SALON<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/salon</p>
+      <div class="comment">
+         <span class="markdown">Sequence ALingment Ontology for pairwise and multiple sequence alignments.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#include_domain_ontologies_salon"
+               title="https://w3id.org/Aether/include_domain_ontologies_salon">include</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#include_OntoGraphDB_OntoSecurityGraphDB"
+            title="https://w3id.org/Aether/include_OntoGraphDB_OntoSecurityGraphDB">include</a>
+      </li>
+      <li>
+         <a href="#include_aether_bigowl_algorithm"
+            title="https://w3id.org/Aether/include_aether_bigowl_algorithm">include</a>
+      </li>
+      <li>
+         <a href="#include_aether_bigowl_data"
+            title="https://w3id.org/Aether/include_aether_bigowl_data">include</a>
+      </li>
+      <li>
+         <a href="#include_aether_bigowl_problem"
+            title="https://w3id.org/Aether/include_aether_bigowl_problem">include</a>
+      </li>
+      <li>
+         <a href="#include_aether_bigowl_workfow"
+            title="https://w3id.org/Aether/include_aether_bigowl_workfow">include</a>
+      </li>
+      <li>
+         <a href="#include_aether_domain_ontology"
+            title="https://w3id.org/Aether/include_aether_domain_ontology">include</a>
+      </li>
+      <li>
+         <a href="#include_bigowl_data_OntoGraphDB"
+            title="https://w3id.org/Aether/include_bigowl_data_OntoGraphDB">include</a>
+      </li>
+      <li>
+         <a href="#include_bigowl_data_bigowl4dq"
+            title="https://w3id.org/Aether/include_bigowl_data_bigowl4dq">include</a>
+      </li>
+      <li>
+         <a href="#include_domain_ontologies_e-lion"
+            title="https://w3id.org/Aether/include_domain_ontologies_e-lion">include</a>
+      </li>
+      <li>
+         <a href="#include_domain_ontologies_obo"
+            title="https://w3id.org/Aether/include_domain_ontologies_obo">include</a>
+      </li>
+      <li>
+         <a href="#include_domain_ontologies_reseo"
+            title="https://w3id.org/Aether/include_domain_ontologies_reseo">include</a>
+      </li>
+      <li>
+         <a href="#include_domain_ontologies_salon"
+            title="https://w3id.org/Aether/include_domain_ontologies_salon">include</a>
+      </li>
+   </ul>
+   <div class="entity" id="include_OntoGraphDB_OntoSecurityGraphDB">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_OntoGraphDB_OntoSecurityGraphDB</p>
+      <div class="comment">
+         <span class="markdown">Onto Security Graph DB. include Onto Graph DB</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/OntoGraphDB" title="https://w3id.org/OntoGraphDB">Onto Graph DB</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/OntoSecurityGraphDB" title="https://w3id.org/OntoSecurityGraphDB">Onto Security Graph DB</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_aether_bigowl_algorithm">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_aether_bigowl_algorithm</p>
+      <div class="comment">
+         <span class="markdown">Aether include BIGOWL Algorithms.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Aether" title="https://w3id.org/Aether/Aether">Aether</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/BIGOWLAlgorithms" title="https://w3id.org/BIGOWLAlgorithms">Big OWL Algorithms</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_aether_bigowl_data">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_aether_bigowl_data</p>
+      <div class="comment">
+         <span class="markdown">Aether include Big OWL Data.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Aether" title="https://w3id.org/Aether/Aether">Aether</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/BIGOWLData" title="https://w3id.org/BIGOWLData">Big OWL Data</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_aether_bigowl_problem">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_aether_bigowl_problem</p>
+      <div class="comment">
+         <span class="markdown">Aether include Big OWL Problems.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Aether" title="https://w3id.org/Aether/Aether">Aether</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/BIGOWLProblems" title="https://w3id.org/BIGOWLProblems">Big OWL Problems</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_aether_bigowl_workfow">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_aether_bigowl_workfow</p>
+      <div class="comment">
+         <span class="markdown">Aether Include Big OWL Workflows.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Aether" title="https://w3id.org/Aether/Aether">Aether</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/BIGOWLWorkflows" title="https://w3id.org/BIGOWLWorkflows">Big OWL Workflows</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_aether_domain_ontology">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_aether_domain_ontology</p>
+      <div class="comment">
+         <span class="markdown">Aether include Domain Ontologies.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Aether" title="https://w3id.org/Aether/Aether">Aether</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DomainOntologies" title="https://w3id.org/Aether/DomainOntologies">Domain Ontologies</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_bigowl_data_OntoGraphDB">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_bigowl_data_OntoGraphDB</p>
+      <div class="comment">
+         <span class="markdown">Onto Graph DB include Big OWL Data</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/BIGOWLData" title="https://w3id.org/BIGOWLData">Big OWL Data</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/OntoGraphDB" title="https://w3id.org/OntoGraphDB">Onto Graph DB</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_bigowl_data_bigowl4dq">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_bigowl_data_bigowl4dq</p>
+      <div class="comment">
+         <span class="markdown">Big OWL 4DQ include Big OEL Data</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/BIGOWLData" title="https://w3id.org/BIGOWLData">Big OWL Data</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/BIGOWL4DQ" title="https://w3id.org/BIGOWL4DQ">BIGOWL4DQ</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_domain_ontologies_e-lion">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_domain_ontologies_e-lion</p>
+      <div class="comment">
+         <span class="markdown">Domain Ontologies include e-LION</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DomainOntologies" title="https://w3id.org/Aether/DomainOntologies">Domain Ontologies</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://ontologies.khaos.uma.es/e-lion" title="http://ontologies.khaos.uma.es/e-lion">e-LION</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_domain_ontologies_obo">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_domain_ontologies_obo</p>
+      <div class="comment">
+         <span class="markdown">Domain Ontologies incluide Open Banking Ontology</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DomainOntologies" title="https://w3id.org/Aether/DomainOntologies">Domain Ontologies</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://ontologies.khaos.uma.es/obo" title="http://ontologies.khaos.uma.es/obo">Open Banking Ontology</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_domain_ontologies_reseo">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_domain_ontologies_reseo</p>
+      <div class="comment">
+         <span class="markdown">Domain Ontologies include RESEO</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DomainOntologies" title="https://w3id.org/Aether/DomainOntologies">Domain Ontologies</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/reseo" title="https://w3id.org/reseo">RESEO</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="include_domain_ontologies_salon">
+      <h3>include<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/Aether/include_domain_ontologies_salon</p>
+      <div class="comment">
+         <span class="markdown">Domain Ontologies include SALON</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#DomainOntologies" title="https://w3id.org/Aether/DomainOntologies">Domain Ontologies</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/salon" title="https://w3id.org/salon">SALON</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+</div>
+</div>
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

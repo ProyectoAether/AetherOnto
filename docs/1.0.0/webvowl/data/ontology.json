@@ -34,6 +34,12 @@
         "value" : "2022-07-05T09:24:00",
         "type" : "label"
       } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "Khaos Research",
+        "type" : "label"
+      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
@@ -55,12 +61,12 @@
       "rights" : [ {
         "identifier" : "rights",
         "language" : "undefined",
-        "value" : "Aether",
+        "value" : "(c) Aether Group",
         "type" : "label"
       }, {
         "identifier" : "rights",
         "language" : "undefined",
-        "value" : "(c) Aether Group",
+        "value" : "Aether",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -69,16 +75,16 @@
         "value" : "Aether",
         "type" : "label"
       } ],
-      "logo" : [ {
-        "identifier" : "logo",
-        "language" : "undefined",
-        "value" : "https://aether.es/wp-content/uploads/2021/10/logo-aether.png",
-        "type" : "label"
-      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
         "value" : "Aether Group",
+        "type" : "label"
+      } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://aether.es/wp-content/uploads/2021/10/logo-aether.png",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -115,7 +121,7 @@
     "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "10",
@@ -133,10 +139,10 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "11",
@@ -206,7 +212,7 @@
       "undefined" : "Sequence ALingment Ontology for pairwise and multiple sequence alignments."
     },
     "attributes" : [ "external" ],
-    "id" : "13"
+    "id" : "14"
   }, {
     "iri" : "https://w3id.org/BIGOWLData",
     "baseIri" : "https://w3id.org",
@@ -272,18 +278,6 @@
     },
     "id" : "6"
   }, {
-    "iri" : "https://w3id.org/Aether/Aether",
-    "baseIri" : "https://w3id.org/Aether",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Aether",
-      "undefined" : "Aether"
-    },
-    "comment" : {
-      "en" : "A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies."
-    },
-    "id" : "4"
-  }, {
     "iri" : "https://w3id.org/OntoGraphDB",
     "baseIri" : "https://w3id.org",
     "instances" : 0,
@@ -295,7 +289,19 @@
       "undefined" : "Ontologie that generically encompass and represent the domain in graph-oriented database."
     },
     "attributes" : [ "external" ],
-    "id" : "16"
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/Aether/Aether",
+    "baseIri" : "https://w3id.org/Aether",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aether",
+      "undefined" : "Aether"
+    },
+    "comment" : {
+      "en" : "A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies."
+    },
+    "id" : "4"
   }, {
     "iri" : "https://w3id.org/BIGOWL4DQ",
     "baseIri" : "https://w3id.org",
@@ -326,13 +332,13 @@
     "id" : "12",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "14",
+    "id" : "13",
     "type" : "owl:objectProperty"
   }, {
     "id" : "15",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "17",
+    "id" : "16",
     "type" : "owl:objectProperty"
   }, {
     "id" : "18",
@@ -404,20 +410,6 @@
     "attributes" : [ "object" ],
     "id" : "9"
   }, {
-    "iri" : "https://w3id.org/Aether/include_domain_ontologies_salon",
-    "baseIri" : "https://w3id.org/Aether",
-    "range" : "13",
-    "label" : {
-      "IRI-based" : "include_domain_ontologies_salon",
-      "undefined" : "include"
-    },
-    "domain" : "6",
-    "comment" : {
-      "en" : "Domain Ontologies include SALON"
-    },
-    "attributes" : [ "object" ],
-    "id" : "12"
-  }, {
     "iri" : "https://w3id.org/Aether/include_aether_bigowl_data",
     "baseIri" : "https://w3id.org/Aether",
     "range" : "10",
@@ -430,21 +422,21 @@
       "en" : "Aether include Big OWL Data."
     },
     "attributes" : [ "object" ],
-    "id" : "14"
+    "id" : "12"
   }, {
-    "iri" : "https://w3id.org/Aether/include_bigowl_data_OntoGraphDB",
+    "iri" : "https://w3id.org/Aether/include_domain_ontologies_salon",
     "baseIri" : "https://w3id.org/Aether",
-    "range" : "16",
+    "range" : "14",
     "label" : {
-      "IRI-based" : "include_bigowl_data_OntoGraphDB",
+      "IRI-based" : "include_domain_ontologies_salon",
       "undefined" : "include"
     },
-    "domain" : "10",
+    "domain" : "6",
     "comment" : {
-      "en" : "Onto Graph DB include Big OWL Data"
+      "en" : "Domain Ontologies include SALON"
     },
     "attributes" : [ "object" ],
-    "id" : "15"
+    "id" : "13"
   }, {
     "iri" : "https://w3id.org/Aether/include_domain_ontologies_e-lion",
     "baseIri" : "https://w3id.org/Aether",
@@ -458,7 +450,21 @@
       "en" : "Domain Ontologies include e-LION"
     },
     "attributes" : [ "object" ],
-    "id" : "17"
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/Aether/include_bigowl_data_OntoGraphDB",
+    "baseIri" : "https://w3id.org/Aether",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "include_bigowl_data_OntoGraphDB",
+      "undefined" : "include"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Onto Graph DB include Big OWL Data"
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
   }, {
     "iri" : "https://w3id.org/Aether/include_aether_bigowl_workfow",
     "baseIri" : "https://w3id.org/Aether",
@@ -481,7 +487,7 @@
       "IRI-based" : "include_OntoGraphDB_OntoSecurityGraphDB",
       "undefined" : "include"
     },
-    "domain" : "16",
+    "domain" : "17",
     "comment" : {
       "en" : "Onto Security Graph DB. include Onto Graph DB"
     },

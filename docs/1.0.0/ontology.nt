@@ -8,6 +8,7 @@
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/publisher> "Aether Group" .
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/rights> "(c) Aether Group"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/rights> "Aether" .
+<https://w3id.org/Aether/> <http://purl.org/dc/terms/source> "Khaos Research"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/title> "Aether Ontology" .
 <https://w3id.org/Aether/> <http://purl.org/ontology/bibo/status> "Draft"@en .
 <https://w3id.org/Aether/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "Aether" .
@@ -45,6 +46,9 @@
 # 
 # http://purl.org/dc/terms/rights
 <http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

@@ -16,6 +16,7 @@
                             <http://purl.org/dc/terms/publisher> "Aether Group" ;
                             <http://purl.org/dc/terms/rights> "(c) Aether Group"^^rdfs:Literal ,
                                                               "Aether" ;
+                            <http://purl.org/dc/terms/source> "Khaos Research"^^rdfs:Literal ;
                             <http://purl.org/dc/terms/title> "Aether Ontology" ;
                             <http://purl.org/ontology/bibo/status> "Draft"@en ;
                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "Aether" ;
@@ -55,6 +56,10 @@
 
 ###  http://purl.org/dc/terms/rights
 <http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/title

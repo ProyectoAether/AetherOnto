@@ -14,6 +14,7 @@
         <owl:versionIRI rdf:resource="https://w3id.org/Aether/1.0.0"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-05T09:24:00</terms:created>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aether Group</terms:creator>
+        <terms:source rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Khaos Research</terms:source>
         <terms:description xml:lang="en">A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-06T12:00:00</terms:issued>
         <terms:license rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://opensource.org/licenses/MIT</terms:license>
@@ -24,10 +25,10 @@
         <bibo:status xml:lang="en">Draft</bibo:status>
         <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aether</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/Aether/</vann:preferredNamespaceUri>
-        <schema:logo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://aether.es/wp-content/uploads/2021/10/logo-aether.png</schema:logo>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aether Ontology</rdfs:label>
         <owl:versionInfo>1.0.0</owl:versionInfo>
         <schema:citation xml:lang="en">Cite this ontology as: Aether Group, Aether Ontology 1.0.0.</schema:citation>
+        <schema:logo rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">https://aether.es/wp-content/uploads/2021/10/logo-aether.png</schema:logo>
     </owl:Ontology>
     
 
@@ -118,6 +119,12 @@
     <!-- https://schema.org/citation -->
 
     <owl:AnnotationProperty rdf:about="https://schema.org/citation"/>
+    
+
+
+    <!-- https://schema.org/logo -->
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/logo"/>
     
 
 
