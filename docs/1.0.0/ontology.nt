@@ -3,16 +3,19 @@
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/created> "2022-07-05T09:24:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/creator> "Aether Group" .
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/description> "A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies."@en .
+<https://w3id.org/Aether/> <http://purl.org/dc/terms/issued> "2023-01-06T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/license> "https://opensource.org/licenses/MIT"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/publisher> "Aether Group" .
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/rights> "(c) Aether Group"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/rights> "Aether" .
 <https://w3id.org/Aether/> <http://purl.org/dc/terms/title> "Aether Ontology" .
+<https://w3id.org/Aether/> <http://purl.org/ontology/bibo/status> "Draft"@en .
 <https://w3id.org/Aether/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "Aether" .
 <https://w3id.org/Aether/> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/Aether/" .
 <https://w3id.org/Aether/> <http://www.w3.org/2000/01/rdf-schema#label> "Aether Ontology" .
 <https://w3id.org/Aether/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
 <https://w3id.org/Aether/> <https://schema.org/citation> "Cite this ontology as: Aether Group, Aether Ontology 1.0.0."@en .
+<https://w3id.org/Aether/> <https://schema.org/logo> "https://aether.es/wp-content/uploads/2021/10/logo-aether.png"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
 # 
 # 
 # #################################################################
@@ -31,6 +34,9 @@
 # http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -43,14 +49,23 @@
 # http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://schema.org/logo
+<http://schema.org/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # https://schema.org/citation
 <https://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/logo
+<https://schema.org/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://schema.org/url
 <https://schema.org/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

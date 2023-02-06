@@ -11,16 +11,19 @@
                             <http://purl.org/dc/terms/created> "2022-07-05T09:24:00"^^xsd:dateTime ;
                             <http://purl.org/dc/terms/creator> "Aether Group" ;
                             <http://purl.org/dc/terms/description> "A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies."@en ;
+                            <http://purl.org/dc/terms/issued> "2023-01-06T12:00:00"^^xsd:dateTime ;
                             <http://purl.org/dc/terms/license> "https://opensource.org/licenses/MIT"^^rdfs:Literal ;
                             <http://purl.org/dc/terms/publisher> "Aether Group" ;
                             <http://purl.org/dc/terms/rights> "(c) Aether Group"^^rdfs:Literal ,
                                                               "Aether" ;
                             <http://purl.org/dc/terms/title> "Aether Ontology" ;
+                            <http://purl.org/ontology/bibo/status> "Draft"@en ;
                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "Aether" ;
                             <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/Aether/" ;
                             rdfs:label "Aether Ontology" ;
                             owl:versionInfo "1.0.0" ;
-                            <https://schema.org/citation> "Cite this ontology as: Aether Group, Aether Ontology 1.0.0."@en .
+                            <https://schema.org/citation> "Cite this ontology as: Aether Group, Aether Ontology 1.0.0."@en ;
+                            <https://schema.org/logo> "https://aether.es/wp-content/uploads/2021/10/logo-aether.png"^^rdfs:Literal .
 
 #################################################################
 #    Annotation properties
@@ -36,6 +39,10 @@
 
 ###  http://purl.org/dc/terms/description
 <http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
@@ -54,6 +61,10 @@
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
@@ -62,8 +73,16 @@
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
+###  http://schema.org/logo
+<http://schema.org/logo> rdf:type owl:AnnotationProperty .
+
+
 ###  https://schema.org/citation
 <https://schema.org/citation> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/logo
+<https://schema.org/logo> rdf:type owl:AnnotationProperty .
 
 
 ###  https://schema.org/url

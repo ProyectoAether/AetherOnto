@@ -29,6 +29,9 @@
   "@id" : "http://purl.org/dc/terms/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -41,13 +44,22 @@
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/ontology/bibo/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://schema.org/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://schema.org/citation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://schema.org/logo",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://schema.org/url",
@@ -66,6 +78,10 @@
     "@language" : "en",
     "@value" : "A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies."
   } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2023-01-06T12:00:00"
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "@value" : "https://opensource.org/licenses/MIT"
@@ -81,6 +97,10 @@
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Aether Ontology"
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@language" : "en",
+    "@value" : "Draft"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "Aether"
@@ -100,6 +120,10 @@
   "https://schema.org/citation" : [ {
     "@language" : "en",
     "@value" : "Cite this ontology as: Aether Group, Aether Ontology 1.0.0."
+  } ],
+  "https://schema.org/logo" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "https://aether.es/wp-content/uploads/2021/10/logo-aether.png"
   } ]
 }, {
   "@id" : "https://w3id.org/Aether/Aether",
