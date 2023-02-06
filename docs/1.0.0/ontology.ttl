@@ -1,0 +1,247 @@
+@prefix : <https://w3id.org/Aether/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/Aether/> .
+
+<https://w3id.org/Aether/> rdf:type owl:Ontology ;
+                            owl:versionIRI <https://w3id.org/Aether/1.0.0> ;
+                            <http://purl.org/dc/terms/created> "2022-07-05T09:24:00"^^xsd:dateTime ;
+                            <http://purl.org/dc/terms/creator> "Aether Group" ;
+                            <http://purl.org/dc/terms/description> "A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies."@en ;
+                            <http://purl.org/dc/terms/license> "https://opensource.org/licenses/MIT"^^rdfs:Literal ;
+                            <http://purl.org/dc/terms/publisher> "Aether Group" ;
+                            <http://purl.org/dc/terms/rights> "(c) Aether Group"^^rdfs:Literal ,
+                                                              "Aether" ;
+                            <http://purl.org/dc/terms/title> "Aether Ontology" ;
+                            <http://purl.org/vocab/vann/preferredNamespacePrefix> "Aether" ;
+                            <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/Aether/" ;
+                            rdfs:label "Aether Ontology" ;
+                            owl:versionInfo "1.0.0" ;
+                            <https://schema.org/citation> "Cite this ontology as: Aether Group, Aether Ontology 1.0.0."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/citation
+<https://schema.org/citation> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/url
+<https://schema.org/url> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/Aether/include_OntoGraphDB_OntoSecurityGraphDB
+:include_OntoGraphDB_OntoSecurityGraphDB rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://w3id.org/OntoGraphDB> ;
+                                         rdfs:range <https://w3id.org/OntoSecurityGraphDB> ;
+                                         rdfs:comment "Onto Security Graph DB. include Onto Graph DB"@en ;
+                                         rdfs:label "include" .
+
+
+###  https://w3id.org/Aether/include_aether_bigowl_algorithm
+:include_aether_bigowl_algorithm rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :Aether ;
+                                 rdfs:range <https://w3id.org/BIGOWLAlgorithms> ;
+                                 rdfs:comment "Aether include BIGOWL Algorithms."@en ;
+                                 rdfs:label "include" .
+
+
+###  https://w3id.org/Aether/include_aether_bigowl_data
+:include_aether_bigowl_data rdf:type owl:ObjectProperty ;
+                            rdfs:domain :Aether ;
+                            rdfs:range <https://w3id.org/BIGOWLData> ;
+                            rdfs:comment "Aether include Big OWL Data."@en ;
+                            rdfs:label "include" .
+
+
+###  https://w3id.org/Aether/include_aether_bigowl_problem
+:include_aether_bigowl_problem rdf:type owl:ObjectProperty ;
+                               rdfs:domain :Aether ;
+                               rdfs:range <https://w3id.org/BIGOWLProblems> ;
+                               rdfs:comment "Aether include Big OWL Problems."@en ;
+                               rdfs:label "include" .
+
+
+###  https://w3id.org/Aether/include_aether_bigowl_workfow
+:include_aether_bigowl_workfow rdf:type owl:ObjectProperty ;
+                               rdfs:domain :Aether ;
+                               rdfs:range <https://w3id.org/BIGOWLWorkflows> ;
+                               rdfs:comment "Aether Include Big OWL Workflows."@en ;
+                               rdfs:label "include" .
+
+
+###  https://w3id.org/Aether/include_aether_domain_ontology
+:include_aether_domain_ontology rdf:type owl:ObjectProperty ;
+                                rdfs:domain :Aether ;
+                                rdfs:range :DomainOntologies ;
+                                rdfs:comment "Aether include Domain Ontologies."@en ;
+                                rdfs:label "include" .
+
+
+###  https://w3id.org/Aether/include_bigowl_data_OntoGraphDB
+:include_bigowl_data_OntoGraphDB rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <https://w3id.org/BIGOWLData> ;
+                                 rdfs:range <https://w3id.org/OntoGraphDB> ;
+                                 rdfs:comment "Onto Graph DB include Big OWL Data"@en ;
+                                 rdfs:label "include" .
+
+
+###  https://w3id.org/Aether/include_bigowl_data_bigowl4dq
+:include_bigowl_data_bigowl4dq rdf:type owl:ObjectProperty ;
+                               rdfs:domain <https://w3id.org/BIGOWLData> ;
+                               rdfs:range <https://w3id.org/BIGOWL4DQ> ;
+                               rdfs:comment "Big OWL 4DQ include Big OEL Data"@en ;
+                               rdfs:label "include" .
+
+
+###  https://w3id.org/Aether/include_domain_ontologies_e-lion
+:include_domain_ontologies_e-lion rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :DomainOntologies ;
+                                  rdfs:range <http://ontologies.khaos.uma.es/e-lion> ;
+                                  rdfs:comment "Domain Ontologies include e-LION"@en ;
+                                  rdfs:label "include" .
+
+
+###  https://w3id.org/Aether/include_domain_ontologies_reseo
+:include_domain_ontologies_reseo rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :DomainOntologies ;
+                                 rdfs:range <https://w3id.org/reseo> ;
+                                 rdfs:comment "Domain Ontologies include RESEO"@en ;
+                                 rdfs:label "include" .
+
+
+###  https://w3id.org/Aether/include_domain_ontologies_salon
+:include_domain_ontologies_salon rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :DomainOntologies ;
+                                 rdfs:range <https://w3id.org/salon> ;
+                                 rdfs:comment "Domain Ontologies include SALON"@en ;
+                                 rdfs:label "include" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ontologies.khaos.uma.es/e-lion
+<http://ontologies.khaos.uma.es/e-lion> rdf:type owl:Class ;
+                                        rdfs:comment "e-LION (e-Learning Integration ONtology) semantic model is proposed to operate as a data consolidation approach of different e-learning knowledge-bases, hence leading to enrich on-top analysis."@en ;
+                                        rdfs:label "e-LION" .
+
+
+###  http://ontologies.khaos.uma.es/obo
+<http://ontologies.khaos.uma.es/obo> rdf:type owl:Class ;
+                                     rdfs:comment "This ontology domain represents the different actors and information generated in open banking services. More specifically, bank statements and invoice management systems are contextualised to allow data reconciliation tasks."@en ;
+                                     rdfs:label "Open Banking Ontology"@en .
+
+
+###  https://w3id.org/BIGOWL4DQ
+<https://w3id.org/BIGOWL4DQ> rdf:type owl:Class ;
+                             rdfs:comment "BIGOW4DQL, has been designed and implemented for a comprehensive solution that integrates and appropriately relates the measurement, assessment, and creation of a suggestion for using data through business rules."@en ;
+                             rdfs:label "BIGOWL4DQ" .
+
+
+###  https://w3id.org/BIGOWLAlgorithms
+<https://w3id.org/BIGOWLAlgorithms> rdf:type owl:Class ;
+                                    rdfs:comment "This ontology covers all possible kinds. It has two main subclasses: DataMiningAlgorithm and OptimizationAlgorithm, which are used to distinguish between these two families of algorithms. The former is included in the form of equivalence with the class DM-Algorithm, which is linked from DMOP."@en ;
+                                    rdfs:label "Big OWL Algorithms" .
+
+
+###  https://w3id.org/BIGOWLData
+<https://w3id.org/BIGOWLData> rdf:type owl:Class ;
+                              rdfs:comment "This ontology contains all the classes and properties related to data. Data is devoted to annotating all the data flowing throughout the analytic workflow. It is declared as EquivalentTo IO-Class of DMOP. This aligning enables datatypes defined by third parties’ ontologies to be contextualised in the analysis. BIGOWLData contains the main data properties defined for this class, namely: path, to annotate the origin of data; and hasDataType, which establishes the relationship with class DataType. This last is used to define the data type, i.e. PrimitiveType (Double, Integer, Boolean, etc.) or StructuredType (Graph, Tree, Matrix, Vector, Tuple, etc.)."@en ;
+                              rdfs:label "Big OWL Data" .
+
+
+###  https://w3id.org/BIGOWLProblems
+<https://w3id.org/BIGOWLProblems> rdf:type owl:Class ;
+                                  rdfs:comment "This ontology is used to represent the problem class and its properties. Problem is oriented to the specific problem domain (Smart Cities, Biology, etc.)."@en ;
+                                  rdfs:label "Big OWL Problems" .
+
+
+###  https://w3id.org/BIGOWLWorkflows
+<https://w3id.org/BIGOWLWorkflows> rdf:type owl:Class ;
+                                   rdfs:comment "This ontology is used tto guide the correct orchestration of a workflow, including elements like tasks, components, parameters, etc. This ontology imports BIGOWLData and BIGOWLAlgorithms to define all the pieces in a workflow."@en ;
+                                   rdfs:label "Big OWL Workflows" .
+
+
+###  https://w3id.org/OntoGraphDB
+<https://w3id.org/OntoGraphDB> rdf:type owl:Class ;
+                               rdfs:comment "Ontologie that generically encompass and represent the domain in graph-oriented database." ;
+                               rdfs:label "Onto Graph DB" .
+
+
+###  https://w3id.org/OntoSecurityGraphDB
+<https://w3id.org/OntoSecurityGraphDB> rdf:type owl:Class ;
+                                       rdfs:comment "Ontologie that generically encompass and represent the domain in security policies of graph-oriented database." ;
+                                       rdfs:label "Onto Security Graph DB" .
+
+
+###  https://w3id.org/reseo
+<https://w3id.org/reseo> rdf:type owl:Class ;
+                         rdfs:comment "This ontology proposing a semantic model for the consolidation, integration, reasoning and linking of data (and meta-data), in the context of satellital remote sensing products for EO. With this objective, an OWL ontology has been developed and an RDF repository has been generated to allow advanced SPARQL querying. Although the proposal has been designed to consider remote sensing data products in general, the current study is mainly focused on the Sentinel 2 satellite mission from the Copernicus Programme of the European Space Agency (ESA). Four different use cases are showcased to check potentials of the proposed semantic model in terms of ontology integration, federated querying, data analysis and reasoning."@en ;
+                         rdfs:label "RESEO" .
+
+
+###  https://w3id.org/salon
+<https://w3id.org/salon> rdf:type owl:Class ;
+                         rdfs:comment "Sequence ALingment Ontology for pairwise and multiple sequence alignments." ;
+                         rdfs:label "SALON" .
+
+
+###  https://w3id.org/Aether/Aether
+:Aether rdf:type owl:Class ;
+        rdfs:comment "A holistic approach to Smart Data for Context Driven Data Analytics (2021-2024)-brings together the knowledge of five scientific teams to address research in different dimensions: Machine Learning, Deep Learning, Big Data, Cybersecurity or Quality, obtaining it through a framework - schema or framework that provides a base structure to develop a project with specific objectives - of metadata described with semantic technologies."@en ;
+        rdfs:label "Aether" .
+
+
+###  https://w3id.org/Aether/DomainOntologies
+:DomainOntologies rdf:type owl:Class ;
+                  rdfs:comment "This class represents problem-specific domain ontologies."@en ;
+                  rdfs:label "Domain Ontologies" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
